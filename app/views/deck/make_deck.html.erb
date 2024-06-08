@@ -1,0 +1,19 @@
+
+
+
+<div class="main select-reader">
+
+    
+
+    <div class="leaders">
+        <% @leaders.each do |leader| %>
+            <ul>
+                <li>
+                    <a href="deck/<%= leader.kataban %>/edit">
+                        <img src="<%= leader.image_url %>" width=80% height=80%>
+                    </a>
+                </li>
+            </ul>
+        <% end %>
+    </div>
+</div>
